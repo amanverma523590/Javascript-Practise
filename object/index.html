@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <button onclick="GetClick()">Get Product</button>
+    </div>
+    <div id="detail-container" style="display: none;">
+        <h3>Product Details</h3>
+        <dl>
+            <dt>Name</dt>
+            <dd id="labelName"></dd>
+            <dt>Price</dt>
+            <dd id="labelPrice"></dd>
+            <dt>Preview Image</dt>
+            <dd>
+                <img id="productImg" alt="no img" height="200" width="200">
+            </dd>
+            <dt>Stock</dt>
+            <dd id="labelStock"></dd>
+        </dl>
+    </div>
+</body>
+</html>

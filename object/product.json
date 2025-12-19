@@ -1,0 +1,6 @@
+{
+    "name" : "jacket",
+    "price" : 500,
+    "photo" : "./images/a.jpg",
+    "stock" : false
+}
