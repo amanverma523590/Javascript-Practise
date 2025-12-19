@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js"></script>
-</head>
-<body>
-    <h1>HIi</h1>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="bodyload()">
+    <div style="margin-bottom: 20px">
+      New Category :
+      <input type="text" id="txtCategory" />
+      <button onclick="AddClick()">Add</button>
+    </div>
+    <div class="container">
+      <div class="box">
+        <h3>Categories List</h3>
+        <ol></ol>
+      </div>
+
+      <div class="box">
+        <h3>Select Category</h3>
+        <select></select>
+        <br /><br />
+        <button onclick="RemoveClick()">Remove</button>
+      </div>
+
+      <div class="box">
+        <h3>Categories Menu</h3>
+        <table border="1" width="200">
+          <thead>
+            <tr>
+              <th>Select Category</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="box">
+        <h3>Categories CheckList</h3>
+        <ul></ul>
+      </div>
+
+      <div class="box">
+        <h3>Nav Buttons</h3>
+        <nav></nav>
+      </div>
+    </div>
+  </body>
 </html>
