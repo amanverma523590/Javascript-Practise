@@ -35,7 +35,7 @@ function LoadCategories() {
     document.querySelector("ul").appendChild(checkLi);
 
     var div = document.createElement("div");
-    div.innerHTML = `<button style="width:200px; margin-top:20px">${item}</button>`;
+    div.innerHTML = `<button style="width:200px; margin-top:20px">${item}</button>  `;
 
     document.querySelector("nav").appendChild(div);
   }
