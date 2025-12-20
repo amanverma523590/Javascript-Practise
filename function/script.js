@@ -78,19 +78,63 @@
 
 //example
 
-function blinkitOrderPrepare(){
-    console.log(`we have started packing ur order`);
-}
+// function blinkitOrderPrepare(){
+//     console.log(`we have started packing ur order`);
+// }
 
-function zomatoOrderPepare(){
-    console.log(`we have started preparing ur order`);
-}
+// function zomatoOrderPepare(){
+//     console.log(`we have started preparing ur order`);
+// }
 
-function payment(amount,callback){
-    console.log(`${amount} is intialize`);
-    console.log(`paymet recive`);
-    callback();
-}
+// function payment(amount,callback){
+//     console.log(`${amount} is intialize`);
+//     console.log(`paymet recive`);
+//     callback();
+// }
 
-console.log(payment(500,zomatoOrderPepare));
+// console.log(payment(500,zomatoOrderPepare));
 // console.log(payment(300,blinkitOrderPrepare));
+
+
+// let a = 10;
+// let b = 20;
+
+
+
+// if(true){
+//     var c = 30;
+// }
+//   console.log(c);
+// function greet(){
+//     var d = 4;
+    
+// }
+// console.log(d);
+// greet();
+
+// let global = 50;
+
+// function greet(){
+   
+    
+
+//     function meet(){
+       
+//         console.log(global);
+//     }
+//     meet();
+// }
+// greet();
+
+function createCounter(){
+
+    let count = 0;
+    function incrementCounter(){
+        count++;
+        return count;
+    }
+    return incrementCounter;  // jab return kar rahe hai to refrnce store karo
+}
+
+let ans = createCounter();
+console.log(ans());
