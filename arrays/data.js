@@ -32,13 +32,31 @@ const products = [
   { id: 20, name: "Artisan Bread", category: "Groceries", price: 8, inStock: true }
 ];
 
-const nayaProduct = products.filter((item)=>{
-    return item.price>50 && item.category=="Electronics";
-}).sort((a,b)=>a.price+b.price).map((item)=>{return ({Name: item.name, Price:item.price})})
-console.log(nayaProduct);
+// const nayaProduct = products.filter((item)=>{
+//     return item.price>50 && item.category=="Electronics";
+// }).sort((a,b)=>a.price+b.price).map((item)=>{return ({Name: item.name, Price:item.price})})
+// console.log(nayaProduct);
 
 //map
 // let nayaarr = products.map((item)=>{
 //     return ({Name:item.name,Price:item.price})
 // })
 // console.log(nayaarr);
+
+//reduce
+
+// const kam = products.reduce((accu,curr)=>{
+//     if(curr.inStock==true){
+//         return  accu + curr.price;
+//     }
+//     else{
+//         return accu;
+//     }
+// },0)
+// console.log(kam);
+
+//SET-->only unique value 
+// let arr = [10,10,20,20,30,40,30,50];
+
+// let s1 = new Set(arr);
+// console.log(s1);
