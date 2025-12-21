@@ -34,5 +34,11 @@ const products = [
 
 const nayaProduct = products.filter((item)=>{
     return item.price>50 && item.category=="Electronics";
-}).sort((a,b)=>a.price+b.price)
+}).sort((a,b)=>a.price+b.price).map((item)=>{return ({Name: item.name, Price:item.price})})
 console.log(nayaProduct);
+
+//map
+// let nayaarr = products.map((item)=>{
+//     return ({Name:item.name,Price:item.price})
+// })
+// console.log(nayaarr);
