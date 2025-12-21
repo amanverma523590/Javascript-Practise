@@ -126,15 +126,31 @@
 // }
 // greet();
 
-function createCounter(){
+// function createCounter(){
+//     let count = 0;
+//     function increment(){
+//        count ++;
+//        return count;
+//     }
 
-    let count = 0;
-    function incrementCounter(){
-        count++;
-        return count;
+//     return increment;
+
+// }
+// const counting = createCounter();
+// console.log(counting());
+// console.log(counting());
+// console.log(counting());
+
+let user ={
+    balance : 500,
+    deposit : function(amount){
+        if(typeof amount === "number" && amount>0){
+          this.balance += amount;
+          return this.balance;
+        }
     }
-    return incrementCounter;  // jab return kar rahe hai to refrnce store karo
 }
-
-let ans = createCounter();
-console.log(ans());
+user.balance = "aman"
+console.log(user);
+// console.log(balance);
+// console.log(user.deposit(200));
