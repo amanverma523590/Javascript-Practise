@@ -119,3 +119,12 @@
 //  return  compare>30;
 // })
 // console.log(an);
+
+//map 
+
+let arr = [1,2,3,4,5];
+
+let nayaarr = arr.map((double)=>{
+  return double*2;
+})
+console.log(nayaarr);
