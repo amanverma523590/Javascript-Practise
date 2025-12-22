@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body style="background-color: black; color: antiquewhite;">
-    <div id="parent">
-        <div id="child1" class="child" style="background-color: red; height: 100px; width: 100px;">Child 1</div>
-        <div id="child2" class="child" style="background-color: green; height: 100px; width: 100px;">Child 2</div>
-        <div id="child3" class="child" style="background-color: yellow; height: 100px; width: 100px;">Child 3</div>
-        <div id="child4" class="child" style="background-color: blue; height: 100px; width: 100px;">Child 4</div>
-        <div id="child5" class="child" style="background-color: pink; height: 100px; width: 100px;">Child 5</div>
-    </div>
+  </head>
+  <body onload="bodyload()">
+    <button onclick="InseertClick()">Insert</button>
+    <button id="btnUpdate">Update</button>
 
-    <script src="script.js"></script>
-</body>
+    <p id="msg"></p>
+
+    <script>
+      function bodyload() {
+
+        let del = document.createElement("button");
+        del.innerHTML = "Delete";
+        del.addEventListener("click",()=>{
+            document.write("deleted succesfully")
+        })
+        document.querySelector("body").appendChild(del)
+
+         document.getElementById("btnUpdate").addEventListener("click", () => {
+          document.write("sup")
+        });
+      }
+
+      function InseertClick() {
+        document.getElementById("msg").textContent = "Inserted"
+      }
+    </script>
+
+    <!-- <script src="script.js"></script -->
+  </body>
 </html>
