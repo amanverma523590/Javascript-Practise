@@ -5,32 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body onload="bodyload()">
-    <button onclick="InseertClick()">Insert</button>
-    <button id="btnUpdate">Update</button>
+  <body >
 
-    <p id="msg"></p>
+    <form onsubmit="handleSubmit(event)">
+      UserName: <input type="text" name="username">
+      <button>Submit</button>
+    </form>
 
-    <script>
-      function bodyload() {
-
-        let del = document.createElement("button");
-        del.innerHTML = "Delete";
-        del.addEventListener("click",()=>{
-            document.write("deleted succesfully")
-        })
-        document.querySelector("body").appendChild(del)
-
-         document.getElementById("btnUpdate").addEventListener("click", () => {
-          document.write("sup")
-        });
-      }
-
-      function InseertClick() {
-        document.getElementById("msg").textContent = "Inserted"
-      }
-    </script>
-
-    <!-- <script src="script.js"></script -->
+    <script src="script.js"></script>
   </body>
 </html>
