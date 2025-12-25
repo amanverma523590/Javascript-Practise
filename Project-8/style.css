@@ -1,0 +1,38 @@
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: grow 5s forwards;
+    position: absolute;
+}
+
+@keyframes grow {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+        font-size: 10px;
+    }
+    100%{
+        transform: scale(3);
+        opacity: 0;
+        font-size: 40px;
+    }
+}
+
+h1{
+    font-size: 100px;
+    background-image: url(./em.jpg);
+    background-size: contain;
+    background-clip: text;
+    color: transparent;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    to{
+        background-position-x: -500px;
+    }
+}
