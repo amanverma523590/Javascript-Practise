@@ -14,8 +14,8 @@ body.addEventListener(('click'),(e)=>{
     const color = ['red','green','blue','yellow','pink','purple'];
     elementCircle.style.backgroundColor = color[Math.floor(Math.random()*6)];
 
-    elementCircle.style.top = `${e.clientY}px`;
-    elementCircle.style.left = `${e.clientX}px`;
+    elementCircle.style.top = `${e.clientY-25}px`;
+    elementCircle.style.left = `${e.clientX-25}px`;
 
     body.append(elementCircle);
 

@@ -5,8 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    animation: grow 5s forwards;
+    /* overflow: hidden; */
+    animation: grow 5s forwards; 
     position: absolute;
 }
 
