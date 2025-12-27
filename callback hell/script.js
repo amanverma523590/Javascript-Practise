@@ -7,14 +7,28 @@ function placeOrder(callback){
         console.log(`Payment successful!...Order is Placed`);
         callback();
     },3000)
+    
 }
 
-function preparingOrdder(){
+function preparingOrdder(callback){
     console.log(`Order is preparing`);
 
     setTimeout(()=>{
         console.log(`Ordered is prepared..`);
+        callback();
     },3000)
 }
 
-placeOrder(preparingOrdder);
+function pickupOrder(){
+    console.log(`Delivery is on way to pickup order..`);
+
+    setTimeout(()=>{
+        console.log(`i have picked up order`);
+    },3000)
+}
+
+placeOrder(()=>{
+    preparingOrdder(()=>{
+        pickupOrder();
+    });
+});
