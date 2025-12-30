@@ -3,6 +3,25 @@
 
 // console.log(a);
 
+// scope
 
+// let age = 20;
 
-//
+// function say(){
+//     console.log(age);
+// }
+// say();
+
+// functional scope
+
+// if(true){
+//     var a = 10;
+// }
+
+// function hi(){
+//     var b = 20;
+// }
+// console.log(b);
+
+let a = 5623475875n;
+console.log(a);
