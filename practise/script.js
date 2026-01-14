@@ -20,7 +20,7 @@
 
 // a();
 
-let details = {
-    name : "aman",
-    age : 19
-}
+// let details = {
+//     name : "aman",
+//     age : 19
+// }
