@@ -62,20 +62,61 @@
 // }
 // usersname(...users)
 
-let obj = {
-    unmae : "Aman",
-    age : 26,
-    email : "aman97@gmail.com"
-}
-// obj.phone = "lelo"
-let objcopy = {...obj,age:2,sex:"male"};
-objcopy.phone = 948;
-// objcopy.push = 
+// let obj = {
+//     unmae : "Aman",
+//     age : 26,
+//     email : "aman97@gmail.com"
+// }
+// // obj.phone = "lelo"
+// let objcopy = {...obj,age:2,sex:"male"};
+// objcopy.phone = 948;
+// // objcopy.push = 
+// // console.log(objcopy)
 // console.log(objcopy)
-console.log(objcopy)
-console.log(obj)
+// console.log(obj)
 
 
+// let obj1 = {
+//     Name : "Aman",
+//     Age: 26
+// }
+// let obj2 = {
+//     Address : "Nepalgunj",
+//     sex : "Male"
+// }
+// let mergeObj = {
+//     ...obj1,...obj2,
+// }
+// console.log(mergeObj)
+
+// function sum(...rest){
+//     // console.log(...rest)
+//     let add = rest.reduce((acc,curr)=>{
+//         return acc+curr;
+//     });
+//     return add;
+// }
+// let ans = sum(2,2,2,4,8);
+// console.log(ans)
+
+
+// let arr = ["Aman","Sanam","Sahil"];
+
+// let [user1, ...user2] = arr;
+// console.log(user1,user2)
+
+
+let obj = {
+    Name: "Aman",
+    Age:26,
+    Address : "nepalguj",
+    sex:"male"
+}
+
+let {Name,Age,...rest} = obj;
+console.log(Name)
+console.log(Age)
+console.log(rest )
 
 
 
