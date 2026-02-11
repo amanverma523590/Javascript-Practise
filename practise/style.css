@@ -1,13 +1,36 @@
-html,body{
-    height: 100vh;
-}
 *{
     margin: 0;padding: 0;box-sizing: border-box;
     background-color: black;
-    color: antiquewhite;
 }
-#name{
-    color: red;
-    font-family: monospace;
-    font-size: 80px;
+img{
+    margin-left: 20px;
+}
+.container{
+    border: 1px solid black;
+    border-top: 5px dotted red;
+    position: relative;
+    top: 200px;
+    background-color: lightblue;
+    height: 1000px;
+}
+.second{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    border: 5px solid blue;
+}
+.third{
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+.fourth{
+    position: sticky;
+    top: 50px;
+    border: 5px solid green;
+}
+.box{
+    background-color: red;
+    height: 1000px;
+    width: 100%;
 }
