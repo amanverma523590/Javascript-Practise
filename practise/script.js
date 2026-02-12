@@ -57,6 +57,34 @@
 // console.log(Now.getMinutes())
 // console.log(Now.getSeconds())
 
-const now = Date.now();
-const date = new Date(0);
-console.log(date.toString())
+// const now = Date.now();
+// const date = new Date(0);
+// console.log(date.toString())
+
+
+// let arr = [1,'aman',2,'sahil',true,];
+
+// // for(let i=0; i<arr.length; i++){
+// //     console.log(arr[i]);
+// // }
+
+// for(let item of arr){
+//     console.log(item)
+// }
+
+// let arr1 = [1,'aman',2,'sahil',true];
+// let arr2 = arr1;
+
+// arr2.push(50);
+// console.log(arr1);
+
+
+//slice
+const arr = [1,2,3,4,5,6];
+const newarr = arr.slice(1,4); //2,3,4
+console.log(newarr); // return new arr
+
+//splice 
+const arr1 = [1,2,3,4,5,6];
+let naya = arr1.splice(1,4,'aman',19);
+console.log(arr1)  // original array se gayab
