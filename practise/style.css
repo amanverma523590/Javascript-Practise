@@ -1,36 +1,52 @@
-*{
-    margin: 0;padding: 0;box-sizing: border-box;
-    background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-img{
-    margin-left: 20px;
+body {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container{
-    border: 1px solid black;
-    border-top: 5px dotted red;
+
+/* ---------------japan flag  */
+/* .flag {
+  height: 300px;
+  width: 400px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+} */
+
+
+/* sweden flag */
+
+.flag{
+    height: 300px;
+    width: 400px;
+    background-color: #006AA7;
+}
+.h-line{
+    height: 10px;
+    background-color: #FECC00;
     position: relative;
-    top: 200px;
-    background-color: lightblue;
-    height: 1000px;
+    margin: 192px 0px 0px 0px;
 }
-.second{
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    border: 5px solid blue;
-}
-.third{
-    position: absolute;
-    top: 100px;
-    left: 10px;
-}
-.fourth{
-    position: sticky;
-    top: 50px;
-    border: 5px solid green;
-}
-.box{
-    background-color: red;
-    height: 1000px;
-    width: 100%;
+.v-line{
+    height: 100%;
+    width: 10px;
+    background-color: #FECC00;
+    position: relative;
+    margin: -202px 0px 0px 100px;
 }
