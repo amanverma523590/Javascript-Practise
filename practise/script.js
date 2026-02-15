@@ -157,21 +157,74 @@
 // console.log(user.name,user.age,user.city.pincode,user.lastname)
 // console.log(user)
 
-let user = {
-    name :'aman',
-    age :26,
-    address : {
-        city:'bangalore',
-        pin : 560091
-    },
-    greeting : function(){
-     console.log(`my name is ${this.name}`);
-     return 20;
-    } 
-}
-let user2 = {
-    name : 'sanma',
-    age : 35
-}
-user2.greeting = user.greeting;
-user2.greeting()
+// let user = {
+//     name :'aman',
+//     age :26,
+//     address : {
+//         city:'bangalore',
+//         pin : 560091
+//     },
+//     greeting : function(){
+//      console.log(`my name is ${this.name}`);
+//      return 20;
+//     } 
+// }
+// let user2 = {
+//     name : 'sanma',
+//     age : 35
+// }
+// user2.greeting = user.greeting;
+// user2.greeting()
+
+// const user1 = {
+//     name : "rohit",
+//     age : 32,
+//     address :{
+//         state : 'Uttrakhanda',
+//         city :'kotdawar'
+//     }
+// }
+
+// const user2 = user1;
+// user2.name = "aman"
+// console.log(user2)  // tehy are changing in samme 
+
+// const user2 = {...user1};  // dono alg alg ho  //shallow copy 1 level
+// user2.name = "Aman"
+// user2.address.city = "dawarka";  // but in deep nested its changing
+// console.log(user2);
+
+// console.log(user1); // ab dono alg alg ho GamepadEvent.apply..
+
+//but if u want deep copy 
+// const user2 = structuredClone(user1);
+// user2.address.city = "Delhi";
+// console.log(user2);
+// console.log(user1)
+
+// ▶️ Function in Js
+
+// function sum(...num){
+//     let total = 0;
+//     for(let i of num){
+//         total += i;
+//     }
+//     console.log(total);
+// }
+// sum(1,2);
+// sum(1,2,3);
+// sum(1,2,3,4);
+
+
+// #function expression --> not hoisted
+
+// let sum = function(num1,num2){
+//     return num1+num2;
+// }
+// console.log(sum(3,4))
+
+// #Arrow funciton
+
+const sum = (num1,num2)=> num1+num2;
+const ans = sum(2,3);
+console.log(ans)
