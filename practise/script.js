@@ -225,6 +225,58 @@
 
 // #Arrow funciton
 
-const sum = (num1,num2)=> num1+num2;
-const ans = sum(2,3);
-console.log(ans)
+// const sum = (num1,num2)=> num1+num2;
+// const ans = sum(2,3);
+// console.log(ans)
+
+// const greet = ()=> ({ name : 'Aman', age :26  })
+// console.log(greet())
+
+//IIFFE
+
+// (function greet(){
+//     console.log('sup aman');
+// }());
+
+
+
+// -----------------------------------------------------
+
+// ⛔⛔Callback function
+
+// function a (){
+//     console.log('a function')
+// }
+// function b (callback){
+//     callback();
+//     console.log('b function')
+    
+// }
+// b(a);
+
+// function hii(){
+//     console.log('i am hii function')
+// }
+// function bye(callback){
+//     callback();
+//     console.log('I am bye function')
+// }
+// bye(hii);
+
+function payment(amount,callback){
+    console.log(`amount ${amount} is paid`);
+    callback();
+}
+function placeOrder(callback){
+    console.log('your order is placed')
+    callback();
+}
+function outOfDelivery(){
+    console.log('item out of delivery')
+}
+payment(500,()=>{
+    placeOrder( ()=>{
+        outOfDelivery()
+    } )
+})
+

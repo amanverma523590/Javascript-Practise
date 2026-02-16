@@ -3,50 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body{
   background-color: black;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* ---------------japan flag  */
-/* .flag {
-  height: 300px;
-  width: 400px;
-  background-color: antiquewhite;
+.container{
+  height: 500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: red;
 }
-.circle {
+
+.box1{
   height: 100px;
   width: 100px;
-  border-radius: 50%;
-  background-color: red;
-  position: relative;
-  margin: 0px 0px 0px 0px;
-} */
-
-
-/* sweden flag */
-
-.flag{
-    height: 300px;
-    width: 400px;
-    background-color: #006AA7;
+  background-color: lightblue;
 }
-.h-line{
-    height: 10px;
-    background-color: #FECC00;
-    position: relative;
-    margin: 192px 0px 0px 0px;
+.box2{
+  height: 100px;
+  width: 100px;
+  background-color: lightcoral;
 }
-.v-line{
-    height: 100%;
-    width: 10px;
-    background-color: #FECC00;
-    position: relative;
-    margin: -202px 0px 0px 100px;
+.box3{
+  height: 100px;
+  width: 100px;
+  background-color: lightgoldenrodyellow;
+}
+.box4{
+  height: 100px;
+  width: 100px;
+  background-color: lightgreen;
 }
