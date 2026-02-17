@@ -263,20 +263,113 @@
 // }
 // bye(hii);
 
-function payment(amount,callback){
-    console.log(`amount ${amount} is paid`);
-    callback();
-}
-function placeOrder(callback){
-    console.log('your order is placed')
-    callback();
-}
-function outOfDelivery(){
-    console.log('item out of delivery')
-}
-payment(500,()=>{
-    placeOrder( ()=>{
-        outOfDelivery()
-    } )
-})
+// function payment(amount,callback){
+//     console.log(`amount ${amount} is paid`);
+//     callback();
+// }
+// function placeOrder(callback){
+//     console.log('your order is placed')
+//     callback();
+// }
+// function outOfDelivery(){
+//     console.log('item out of delivery')
+// }
+// payment(500,()=>{
+//     placeOrder( ()=>{
+//         outOfDelivery()
+//     } )
+// })
 
+//▶️▶scope in js
+//global
+// let a = 5;
+// let b = 1;
+
+// {
+//     console.log(a,'yes i am accesbile beciuse i am global')
+// }
+// if(true){
+//     console.log(a,'yes i am accesbile beciuse i am global')
+// }
+
+// function add(){
+//     console.log(a,"yes i am accesbile beciuse i am global")
+// }
+// add();
+
+
+//local
+
+// function add(){
+//     let a = 5;
+// }
+// add();
+// console.log(a) // beacus eits local scope
+
+// {
+//     let a = 5;
+// }
+// console.log(a);// beacus eits local scope
+
+// if(true){
+//     let a = 5;
+// }
+// console.log(a)
+
+// ⛔Global scope --> let,const accesbile to anyone
+// ⛔function scope --> let,const accesbile to inside function
+// ⛔block scope --> let,const accesbile to inside block
+
+//but var doesnot respect block scope if();
+
+// var a = 5;
+
+// function add(){
+//     var b = 6;
+// }
+
+// if(true){
+//     var c = 2;  // doesn't respect and show the value
+// }
+// console.log(c)
+
+
+// let global = 30;
+
+// function greet(){
+    
+//     console.log(global);
+//     let global = 40;
+// }
+// greet();
+
+// ▶️⛔Clousers in js
+
+// function createCounter(){
+
+//     let count = 0;
+//     function increment(){
+//         count++;
+//         return count;
+//     }
+
+//     return increment;  // function return to itself not calling
+
+// }
+// // console.log(count)  
+// const counter = createCounter();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+function main(){
+    let name = "Aman";
+
+    function sayName(){
+        console.log(name);
+    }
+    sayName();
+
+}
+main();
