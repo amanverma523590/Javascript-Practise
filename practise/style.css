@@ -4,35 +4,37 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: #f9f9fa;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container{
-  height: 500px;
+  height: 400px;
+  width: 500px;
+  background-color: #e6e9ed;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  background-color: red;
+  flex-direction: column;
 }
-
-.box1{
-  height: 100px;
-  width: 100px;
-  background-color: lightblue;
+.signin{
+  font-size: x-large;
+  color: red;
+  text-align: center;
+  margin: 70px 0px 0px 0px;
+  background-color: blue;
 }
-.box2{
-  height: 100px;
-  width: 100px;
-  background-color: lightcoral;
+.form{
+  margin-left: 22%;
+  margin-top: 20px;
 }
-.box3{
-  height: 100px;
-  width: 100px;
-  background-color: lightgoldenrodyellow;
+label{
+  font-size: large;
+  font-weight: bolder;
 }
-.box4{
-  height: 100px;
-  width: 100px;
-  background-color: lightgreen;
+input{
+  height: 30px;
+  width: 250px;
+  margin-top: 10px;
 }
