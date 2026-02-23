@@ -1,5 +1,3 @@
-
-
 // const str1 = "Aman";
 // const str2 = 'Sanam';
 // const date = 18;
@@ -38,14 +36,12 @@
 // const str1 = "         aman is coding       Verma    ";
 // console.log(str1.trim())
 
-
 // const str1 = "aman,sanam,sahil,anjali";
-// console.log(str1.split(","));  //return new array 
-
+// console.log(str1.split(","));  //return new array
 
 // --------------------------------------------------------------
 
-//Date 
+//Date
 
 // const Now = new Date();
 // console.log(Now)
@@ -60,7 +56,6 @@
 // const now = Date.now();
 // const date = new Date(0);
 // console.log(date.toString())
-
 
 // let arr = [1,'aman',2,'sahil',true,];
 
@@ -78,13 +73,12 @@
 // arr2.push(50);
 // console.log(arr1);
 
-
 //slice
 // const arr = [1,2,3,4,5,6];
 // const newarr = arr.slice(1,4); //2,3,4
 // console.log(newarr); // return new arr
 
-// //splice 
+// //splice
 // const arr1 = [1,2,3,4,5,6];
 // let naya = arr1.splice(1,4,'aman',19);
 // console.log(arr1)  // original array se gayab
@@ -132,7 +126,7 @@
 // const {name,age,city} = user;
 // console.log(name,age,city.pincode)
 
-// const arr  = [10,20,30,40] 
+// const arr  = [10,20,30,40]
 // const [first,second] = arr;
 // console.log(first,second)
 
@@ -167,7 +161,7 @@
 //     greeting : function(){
 //      console.log(`my name is ${this.name}`);
 //      return 20;
-//     } 
+//     }
 // }
 // let user2 = {
 //     name : 'sanma',
@@ -187,7 +181,7 @@
 
 // const user2 = user1;
 // user2.name = "aman"
-// console.log(user2)  // tehy are changing in samme 
+// console.log(user2)  // tehy are changing in samme
 
 // const user2 = {...user1};  // dono alg alg ho  //shallow copy 1 level
 // user2.name = "Aman"
@@ -196,7 +190,7 @@
 
 // console.log(user1); // ab dono alg alg ho GamepadEvent.apply..
 
-//but if u want deep copy 
+//but if u want deep copy
 // const user2 = structuredClone(user1);
 // user2.address.city = "Delhi";
 // console.log(user2);
@@ -214,7 +208,6 @@
 // sum(1,2);
 // sum(1,2,3);
 // sum(1,2,3,4);
-
 
 // #function expression --> not hoisted
 
@@ -238,8 +231,6 @@
 //     console.log('sup aman');
 // }());
 
-
-
 // -----------------------------------------------------
 
 // ⛔⛔Callback function
@@ -250,7 +241,7 @@
 // function b (callback){
 //     callback();
 //     console.log('b function')
-    
+
 // }
 // b(a);
 
@@ -297,7 +288,6 @@
 // }
 // add();
 
-
 //local
 
 // function add(){
@@ -333,11 +323,10 @@
 // }
 // console.log(c)
 
-
 // let global = 30;
 
 // function greet(){
-    
+
 //     console.log(global);
 //     let global = 40;
 // }
@@ -356,20 +345,193 @@
 //     return increment;  // function return to itself not calling
 
 // }
-// // console.log(count)  
+// // console.log(count)
 // const counter = createCounter();
 // console.log(counter());
 // console.log(counter());
 // console.log(counter());
 // console.log(counter());
 
-function main(){
-    let name = "Aman";
+// function main(){
+//     let name = "Aman";
 
-    function sayName(){
-        console.log(name);
-    }
-    sayName();
+//     function sayName(){
+//         console.log(name);
+//     }
+//     sayName();
 
-}
-main();
+// }
+// main();
+
+// ▶️⛔Banking example in clousers
+
+// let balance = 500;
+
+// balance += "Aman";
+// console.log(balance)
+// ise bachne ke liye lets put inside fucntion oe]r object
+
+// let balance = 200;
+
+// let user={
+
+//     deposit : function(amount){
+//         if(typeof amount == "number" && amount>=0 ){
+//         balance += amount;
+//         }else{
+//             console.log("enter in  number")
+//         }
+//     },
+
+//     withdraw : function takeout(amount){
+//         if(amount >= 0 && typeof amount === "number"){
+//             balance -= amount;
+//         }else{
+//             console.log("number me do bhai")
+//         }
+//     },
+//     getbalance : function checkbalance(){
+//         return balance;
+//     }
+// }
+// user.deposit(200);
+// // console.log("toal amount",user.balance)
+// // user.balance += "aman";
+// // console.log(user.balance)
+
+// // user.withdraw("nak");
+// // console.log(user.balance)
+// const bal = user.getbalance();
+// console.log("Toatal amount is ", bal)
+
+// ⛔⛔⛔▶️▶️▶️▶️▶️▶️⛔⛔⛔⛔⛔⛔▶️▶️▶️▶️▶️
+
+// function createBankApp() {
+
+//   let balance = 200;  // now it has beocme private variable
+
+//   let user = {
+//     deposit: function (amount) {
+//       if (typeof amount == "number" && amount >= 0) {
+//         balance += amount;
+//         return balance;
+//       } else {
+//         console.log("enter in  number");
+//       }
+//     },
+
+//     withdraw: function takeout(amount) {
+//       if (amount >= 0 && typeof amount === "number" ) {
+//         return balance -= amount;
+//       } else {
+//         console.log("number me do bhai");
+//       }
+//     },
+//     getbalance: function checkbalance() {
+//       return "balance is", balance;
+//     },
+//   };
+
+//   return user;
+
+// }
+
+// const customer = createBankApp();
+
+// // console.log("balcnce is",customer.deposit(200))
+// console.log("u have withdrawn rs",customer.withdraw(1000))
+
+
+// ▶️▶️▶️▶️⛔⛔⛔⛔⛔ 
+
+// 1) forEach
+// const arr = [1,2,3,4];
+
+// let sum = 0;
+// arr.forEach((num)=>{
+//     sum += num;
+// })
+// console.log(sum)
+
+// 2) Filter
+// ▶️Return ne Array
+// ▶️Never change on original array
+// ▶️condition based filter
+
+// const arr = [1,2,3,4,5];
+
+// const sortarr = arr.filter((n)=>{
+//     return n>3;
+// })
+// console.log(sortarr)
+
+// const arr = [1,2,3,4,5,6];
+
+// arr.filtering = function(compare){
+//     const ans = [];
+//     for(let num of arr){
+//         if(compare(num)){
+//             ans.push(num)
+//         }
+//     }
+//     return ans;
+// }
+// const ans = arr.filtering((num)=>{
+//     return num>2;
+// })
+// console.log(ans)
+
+// ▶️▶️▶️▶️▶️⛔⛔⛔⛔⛔⛔⛔
+// 3) Map itereate and modify object
+// change every elemnt in Array.
+
+// let arr = [1,2,3,4,5,6];
+
+// const ans = arr.map((item)=>{
+//      return item*2;
+// })
+// console.log(ans)
+
+
+const products = [
+  // Electronics
+  { id: 1, name: "Laptop", category: "Electronics", price: 1200, inStock: true },
+  { id: 2, name: "Headphones", category: "Electronics", price: 200, inStock: true },
+  { id: 3, name: "Smartphone", category: "Electronics", price: 800, inStock: false },
+  { id: 4, name: "Monitor", category: "Electronics", price: 300, inStock: true },
+  { id: 5, name: "Keyboard", category: "Electronics", price: 75, inStock: true },
+
+  // Books
+  { id: 6, name: "The Hobbit", category: "Books", price: 25, inStock: true },
+  { id: 7, name: "A Brief History of Time", category: "Books", price: 30, inStock: true },
+  { id: 8, name: "Dune", category: "Books", price: 28, inStock: false },
+
+  // Appliances
+  { id: 9, name: "Coffee Maker", category: "Appliances", price: 150, inStock: false },
+  { id: 10, name: "Blender", category: "Appliances", price: 80, inStock: true },
+  { id: 11, name: "Toaster", category: "Appliances", price: 45, inStock: true },
+  { id: 12, name: "Microwave Oven", category: "Appliances", price: 220, inStock: true },
+
+  // Clothing
+  { id: 13, name: "T-Shirt", category: "Clothing", price: 20, inStock: true },
+  { id: 14, name: "Jeans", category: "Clothing", price: 60, inStock: false },
+  { id: 15, name: "Jacket", category: "Clothing", price: 110, inStock: true },
+
+  // Home Goods
+  { id: 16, name: "Desk Lamp", category: "Home Goods", price: 35, inStock: true },
+  { id: 17, name: "Scented Candle", category: "Home Goods", price: 15, inStock: true },
+  { id: 18, name: "Picture Frame", category: "Home Goods", price: 22, inStock: false },
+
+  // Groceries
+  { id: 19, name: "Organic Apples", category: "Groceries", price: 5, inStock: true },
+  { id: 20, name: "Artisan Bread", category: "Groceries", price: 8, inStock: true }
+];
+
+const ans = products.filter((items)=>{
+    return items.price>50 && items.category=="Electronics";
+}).sort((a,b)=>{
+    return a.price-b.price;
+}).map((item)=>{
+    return ({Name: item.name, Price:item.price})
+})
+console.log(ans)
